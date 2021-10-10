@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <script defer src="script.js    "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+
+    <title>Inject_Homepage</title>
+    <style>
+        
+       
+    
+        #webcam-container{
+            margin-top: 100px;
+            
+            
+        }
+
+        #label-container{
+            font-family: cursive;
+            font-size: 2rem;
+            
+            color: white
+            
+        }
+
+        body{
+            background-image: url(https://wallpaperaccess.com/full/316878.jpg);
+            background-repeat:no-repeat;
+            background-size: cover
+            ;
+            
+            
+        }
+        
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+    .container {
+        font-family: monsterrat;
+        width: 1000px;
+        max-height: 100px;
+    }
+     .header {
+         text-align: center;
+         font-size: 50px;
+         margin-bottom: 80px;
+         text-transform: uppercase;
+         font-weight: 700;
+     }
+
+     .header span {
+         color: deepskyblue;
+     }
+
+     .single-service {
+         padding: 25px;
+         transition: all .5s ease;
+         width: 500px;
+        margin-left: -300px;
+        background: radial-gradient(circle, #00ccff, #0190f9);
+     }
+
+ 
+
+     .single-service i {
+         font-size: 60px;
+     }
+
+     .single-service h2 {
+         font-size: 30px;
+         font-weight: bold;
+         
+         
+     }
+
+     #ga {
+         position: absolute;
+     }
+
+     #pix {
+         position: relative;
+         left: 0%;
+         margin-top: 400px;
+     }
+
+     #romir {
+         position: relative;
+         left: 0%;
+         margin-top: 60px
+         
+
+     }
+
+     .single-service:hover {
+         color: #fff;
+         background: radial-gradient(circle, #00ccff, #0190f9);
+     }
+    </style>
+ 
+</head>
+<body>
+
+    
+    
+
+  <div class="container">
+    <h2 class="header"> Our <span> Prototypes </span></h2>
+     <div class="row">
+         <div class="col s12 m6s 14" id="ga">
+              <div class="single-service center-align">
+                <i class="lni lni-camera"></i>
+                <h2>Image recognition</h2>
+                <p>Our image recognition system greatly enhances place security. Despite the fact that many stores have cameras to monitor their operations, only around 1 - 2 percent of stores have proper security systems with image recognition due to the high cost and maintenance requirements. Our image recognition technology can recognize wanted criminals, frequent shoppers, and tell the difference between thieves and ordinary shoppers</p>
+              </div>
+         </div>
+         <div class="col s12 m6s 14" id="pix">
+            <div class="single-service center-align">
+              <i class="lni lni-camera"></i>
+              <a href="https://tisb-hacks.web.app/receipt.html">
+                <h2 >Receipt Scanner</h2>
+            </a>
+              
+              <p>To increase security in areas where a bill invoice is supplied, we designed a receipt scanner that generates a unique barcode, and you must scan the receipt to depart the shop, which will activate the rotating door. This reduces the number of shoplifters and stolen goods, making it an extremely successful technique. 
+            </p>
+            </div>
+       </div>
+
+       <div class="col s12 m6s 14" id="romir">
+        <div class="single-service center-align">
+            <i class="lni lni-phone"></i>
+          <h2>Emergency calling</h2>
+          <p>The emergency calling feature is highly significant because if a wanted criminal from the database is seen through the camera and identified by image recognition, it immediately contacts 911 so that no time is wasted and cops arrive quickly to ensure that no robbery or crime occurs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+    <div>
+        <div id="webcam-container"></div>
+        <div id="label-container"></div>
+      </div>
+</div>
+
+
+</body>
+
+</html>
