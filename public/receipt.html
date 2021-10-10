@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+    <script defer src="test.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyClfVbN2wWW4Bldzf422oPMj3hoqDEfVeY",
+        authDomain: "tisb-hacks.firebaseapp.com",
+        projectId: "tisb-hacks",
+        storageBucket: "tisb-hacks.appspot.com",
+        messagingSenderId: "99530115857",
+        appId: "1:99530115857:web:29323f185188f0784f9ab0"
+      };
+    
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src=
+"https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js">
+</script>
+
+</head>
+<body>  
+    <input class="hidden" placeholder="data"> 
+<button class="QR">Generate QR!</button><br><br>
+<button class="Print" id="print">Print Receipt</button><br><br>
+<div class="final-receipt" id="final-receipt">
+<img class="qr-code" src>
+
+<table class="body-wrap">
+    <tbody><tr>
+        <td></td>
+        <td class="container" width="600">
+            <div class="content">
+                <table class="main" width="100%" cellpadding="0" cellspacing="0">
+                    <tbody><tr>
+                        <td class="content-wrap aligncenter">
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                                <tbody><tr>
+                                    <td class="content-block">
+                                        <h2>Receipt</h2>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="content-block">
+                                        <table class="invoice">
+                                            <tbody><tr>
+                                                <td>James Rodger<br>Invoice #12345<br>October 10 2021</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table class="invoice-items" cellpadding="0" cellspacing="0">
+                                                        <tbody><tr>
+                                                            <td>Service 1</td>
+                                                            <td class="alignright">₹ 200.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Service 2</td>
+                                                            <td class="alignright">₹ 100.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Service 3</td>
+                                                            <td class="alignright">₹ 60.00</td>
+                                                        </tr>
+                                                        <tr class="total">
+                                                            <td class="alignright" width="80%">Total</td>
+                                                            <td class="alignright">₹ 360.00</td>
+                                                        </tr>
+                                                    </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    
+                                </tr>
+                                <tr>
+                                    <td class="content-block">
+                                        Company Inc. 123 Van Ness, San Francisco 94102
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                </tbody></table>
+                <div class="footer">
+                    <table width="100%">
+                        <tbody>
+                    </tbody></table>
+                </div></div>
+        </td>
+        <td></td>
+    </tr>
+</tbody></table>
+</div>
+</body>
+</html>
